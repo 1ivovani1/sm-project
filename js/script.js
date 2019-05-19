@@ -1,3 +1,7 @@
+$(".modal-buy").hide();
+$(".modal-content").hide();
+
+
 $('.menu-btn').on('click', function(e) {
   e.preventDefault();
   $(this).toggleClass('menu-btn_active');
@@ -98,3 +102,28 @@ function openTabs(el) {
 
    btnTarget.classList.add("active");
 }
+
+$("#senior").click(function(){
+    $(".pay-method").html('<iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Senior%20%D0%A2%D0%B0%D1%80%D0%B8%D1%84&default-sum=2799&button-text=12&any-card-payment-type=on&button-size=l&button-color=orange&fio=on&phone=on&mail=on&successURL=https%3A%2F%2Fmy-files.ru%2Fdevkrf&quickpay=small&account=410018707507727&" width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe><iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Senior%20%D0%A2%D0%B0%D1%80%D0%B8%D1%84&default-sum=2799&button-text=12&mobile-payment-type=on&button-size=l&button-color=orange&fio=on&phone=on&mail=on&successURL=https%3A%2F%2Fmy-files.ru%2Fdevkrf&quickpay=small&account=410018707507727&" width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe>');
+    $(".modal-buy").show();
+    $(".modal-content").fadeIn(800);
+});
+$("#junior").click(function(){
+    $(".pay-method").html('<iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Junior%20%D0%A2%D0%B0%D1%80%D0%B8%D1%84&default-sum=999&button-text=12&any-card-payment-type=on&button-size=l&button-color=orange&fio=on&phone=on&mail=on&successURL=https%3A%2F%2Fmy-files.ru%2Fh3ofdf&quickpay=small&account=410018707507727&" width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe><iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Junior%20%D0%A2%D0%B0%D1%80%D0%B8%D1%84&default-sum=999&button-text=12&mobile-payment-type=on&button-size=l&button-color=orange&fio=on&phone=on&mail=on&successURL=https%3A%2F%2Fmy-files.ru%2Fh3ofdf&quickpay=small&account=410018707507727&" width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe>');
+    $(".modal-buy").show();
+    $(".modal-content").fadeIn(800);
+});
+
+$("#pro").click(function(){
+    $(".pay-method").html('<iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Pro%20%D0%A2%D0%B0%D1%80%D0%B8%D1%84&default-sum=1999&button-text=12&any-card-payment-type=on&button-size=l&button-color=orange&fio=on&phone=on&mail=on&successURL=https%3A%2F%2Fmy-files.ru%2F62r1jr&quickpay=small&account=410018707507727&" width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe><iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Pro%20%D0%A2%D0%B0%D1%80%D0%B8%D1%84&default-sum=1999&button-text=12&mobile-payment-type=on&button-size=l&button-color=orange&fio=on&phone=on&mail=on&successURL=https%3A%2F%2Fmy-files.ru%2F62r1jr&quickpay=small&account=410018707507727&" width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe>');
+    $(".modal-buy").show();
+    $(".modal-content").fadeIn(800);
+});
+$("<iframe>").click(function(){
+  $(".modal-buy").hide();
+  $(".modal-content").hide();
+});
+$(".close").click(function(){
+  $(".modal-buy").fadeOut(800);
+  $(".modal-content").fadeOut(800);
+})

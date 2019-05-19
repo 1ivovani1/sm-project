@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="wrapper">
-  <div class="menu">
+  <!-- <div class="menu">
     <a href="#" class="menu-btn">
     <span></span>
   </a>
@@ -19,7 +19,7 @@
       <a href="#">Новости</a>
       <a href="#">Контакты</a>
     </nav>
-  </div>
+  </div> -->
   <div class="content">
     <div class="menu-block">
       <nav class="menu-nav">
@@ -41,7 +41,7 @@
     </section>
 
     <section class="contacts">
-        <h1 onclick="slowScroll('.contacts')">Вся информация по процессу похудения!<img class="bottom-arr" src="images/bottom-arr.svg" alt=""></h1>
+        <h1 onclick="slowScroll('.contacts')">Вся информация по процессу похудения!</h1>
       <div id="btns">
         <div class="btn" onclick="window.location='#'">
           <h2>Оплата</h2>
@@ -81,7 +81,7 @@
               <div class="content1">
                 <!-- Tab links -->
                 <div class="tabs">
-                  <button class="tablinks active" data-country="London"><p data-title="Почему?">Почему?</p></button>
+                  <button class="tablinks active" data-country="London"><p data-title="Зачем?">Зачем?</p></button>
                   <button class="tablinks" data-country="Paris"><p data-title="Анализ">Анализ</p></button>
                   <button class="tablinks" data-country="Barcelona"><p data-title="Пища">Пища</p></button>
                   <button class="tablinks" data-country="Madrid"><p data-title="Терпение">Терпение</p></button>
@@ -90,8 +90,8 @@
                 <!-- Tab content -->
               <div class="wrapper_tabcontent">
                 <div id="London" class="tabcontent active">
-                  <h3>Почему?</h3>
-                  <p>"Почему я худею ?" - Первым делом Вы должны ответить на данный вопрос, а только потом уже решать - надо худеть или нет.</p>
+                  <h3>Зачем?</h3>
+                  <p>"Зачем мне худеть ?" - Первым делом Вы должны ответить на данный вопрос, а только потом уже решать - надо худеть или нет.</p>
                 </div>
 
                 <div id="Paris" class="tabcontent">
@@ -115,14 +115,16 @@
 
     <section class="portfolio">
 
+          <h1>Тарифы</h1>
+
         <div class="wrapper-pay">
 
           <div class="wrapper-rate">
             <div class="name">Junior</div>
             <div class="prev-price">2000₽</div>
             <div class="price"><span>999₽</span>/навсегда</div>
-            <div class="description">В данный пакет входят: <br></div>
-            <div class="subm-btn">Купить</div>
+            <div class="description">В данный пакет входят:<br>1.Подробная программа по похудению на месяц! <br>2.Подробная инструкция по применению! <br>(Программа расписана на месяц,вы должны соблюдать ее в течение этого времени,и тогда достигнете желаемого результата!)</div>
+            <div class="subm-btn" id="junior">Купить</div>
         </div>
 
           <div class="wrapper-rate">
@@ -130,22 +132,40 @@
             <div class="name">Pro</div>
             <div class="prev-price">3500₽</div>
             <div class="price"><span>1999₽</span>/навсегда</div>
-            <div class="description">В данный пакет входят: <br></div>
-            <div class="subm-btn">Купить</div>
+            <div class="description">В данный пакет входят: <br>1.Подробная программа по похудению на месяц! <br>2.Подробная инструкция по применению! <br>3.Советы от профессионалов <br>4.Рецепты и примеры упражнений</div>
+            <div class="subm-btn" id="pro">Купить</div>
         </div>
 
           <div class="wrapper-rate">
             <div class="name">Senior</div>
             <div class="prev-price">4800₽</div>
             <div class="price"><span>2799₽</span>/навсегда</div>
-            <div class="description">В данный пакет входят:</div>
-            <div class="subm-btn">Купить</div>
+            <div class="description">В данный пакет входят: <br>1.Все то же,что и в Pro<br>2.Подробная таблица с расчетом кКал специально для вас,чтобы было удобнее соблюдать программу!</div>
+            <div class="subm-btn" id="senior">Купить</div>
           </div>
 
         </div>
-
     </section>
 
+    <div class="modal-buy">
+      <div class="modal-content">
+        <img src="images/close.svg" alt="" class="close">
+        <h1>Выберите удобный для вас способ оплаты!</h1>
+        <div class="pay-method">
+          <iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Junior%20%D0%A2%D0%B0%D1%80%D0%B8%D1%84&default-sum=999&button-text=12&any-card-payment-type=on&button-size=l&button-color=orange&successURL=&quickpay=small&account=410018707507727&" width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+          <iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Junior%20%D0%A2%D0%B0%D1%80%D0%B8%D1%84&default-sum=999&button-text=12&mobile-payment-type=on&button-size=l&button-color=orange&successURL=&quickpay=small&account=410018707507727&" width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+        </div>
+      </div>
+    </div>
+      <footer>
+        <h3>Напишите нам о своих пожеланиях, жалобах, предложениях:<br><a id="footer-pocta" href="mailto:yaroslavskiy03@list.ru"> yaroslavskiy03@list.ru</a></h3>
+          <img src="images/footer.svg" alt="">
+      </footer>
+      <div class="sponsored">
+            <div class="sp-block"></div>
+            <div class="sp-block"></div>
+            <div class="sp-block"></div>
+      </div>
   </div>
 </div>
 
