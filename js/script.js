@@ -1,26 +1,21 @@
 $(".modal-buy").hide();
 $(".modal-content").hide();
 
-
 $('.menu-btn').on('click', function(e) {
   e.preventDefault();
   $(this).toggleClass('menu-btn_active');
   $('.menu').toggleClass('menu_active');
-  $(".content").toggleClass('content_active');
-})
-$(".menu-btn1").hide();
+});
+
+$(window).scroll(function(){
+    
+});
+
 $(document).ready(function(){
   $(".anim1").toggleClass('anim1_active');
   $(".anim2").toggleClass('anim2_active');
-  if ($(window).width() <= '1100'){
-    $(".menu-btn1").show();
-  }
 });
-$('.menu-btn1').on('click', function(e) {
-  e.preventDefault();
-  $(this).toggleClass('menu-btn1_active');
-  $('.menu-nav').toggleClass('menu-nav_active');
-});
+
 function slowScroll(id){
   var offset = 0;
   $('html, body').animate ({
